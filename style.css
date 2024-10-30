@@ -152,6 +152,86 @@ body {
     background: var(--main-color-red);
 }
 
+.about {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8rem;
+}
+
+.about .image {
+    flex: 1 1 42rem;
+    position: relative;
+}
+
+.about .image::before,
+.about .image::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background: var(--main-color-red);
+    height: 15rem;
+    width: 15rem;
+}
+
+.about .image::before {
+    top: 0;
+    left: 0;
+}
+
+.about .image::after {
+    bottom: 0;
+    right: 0;
+}
+
+.about .image img {
+    width: 100%;
+    padding: 2rem;
+}
+
+.about .content {
+    flex: 1 1 42rem;
+}
+
+.about .content span {
+    font-size: 2rem;
+    color: var(--main-color-red);
+}
+
+.about .content .title {
+    font-size: 4rem;
+    color: var(--color-white);
+    margin-top: .5rem;
+}
+
+.about .content p {
+    font-size: 1.5rem;
+    color: var(--color-light-grey-bg);
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+.about .content .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.about .content .box-container .box {
+    flex: 1 1 20rem;
+}
+
+.about .content .box-container .box h3 {
+    font-size: 2rem;
+    color: var(--color-white);
+}
+
+.about .content .box-container .box h3 i {
+    padding-right: 1.5rem;
+    color: var(--main-color-red);
+}
+
 /* Media Queries para responsividade */
 @media (max-width: 991px) {
     html {
@@ -192,6 +272,15 @@ body {
     .header .navbar a {
         display: block;
         font-size: 2rem;
+    }
+    .about {
+        gap: 3rem;
+    }
+    .about .image {
+        flex: 1 1 26rem;
+    }
+    .about .content .title {
+        font-size: 3rem;
     }
 }
     
