@@ -455,6 +455,36 @@ section {
     color: var(--main-color-red);
 }
 
+.banner {
+    background: linear-gradient(var(--black-opacity), var(--black-opacity)), 
+    url(image/academia.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.banner span {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: var(--main-color-red);
+}
+
+.banner h3 {
+    padding-top: 1rem;
+    color: var(--color-white);
+    text-transform: uppercase;
+    font-size: 3.5rem;
+}
+
+.banner p {
+    margin: 1rem auto;
+    max-width: 60rem;
+    font-size: 1.5rem;
+    color: var(--color-light-grey-bg);
+    line-height: 2;
+}
+
 /* Media Queries para responsividade */
 @media (max-width: 991px) {
     html {
