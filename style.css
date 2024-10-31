@@ -392,6 +392,69 @@ section {
     color: var(--main-color-red);
 }
 
+.trainers .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+    gap: 1.5rem;
+}
+
+.trainers .box-container .box {
+    height: 40rem;
+    overflow: hidden;
+    position: relative;
+    border: .1rem solid var(--color-light-grey-bg);
+    box-shadow: var(--color-white) 0 .5rem 1rem 0;
+    border-radius: .3rem;
+}
+
+.trainers .box-container .box:hover .content {
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.trainers .box-container .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.trainers .box-container .box .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--color-dark-grey-bg);
+    padding: 2rem;
+    transform: translateY(6.5rem);
+}
+
+.trainers .box-container .box .content span {
+    font-size: 1.5rem;
+    color: var(--main-color-red);
+}
+
+.trainers .box-container .box .content h3 {
+    font-size: 2rem;
+    color: var(--color-white);
+    padding-top: .5rem;
+}
+
+.trainers .box-container .box .content .share {
+    padding-top: 2rem;
+    margin-top: 1.5rem;
+    border-top: 0.1rem solid var(--color-light-grey-bg);
+}
+
+.trainers .box-container .box .content .share a {
+    font-size: 2rem;
+    color: var(--color-white);
+    margin-right: 1.5rem;
+}
+
+.trainers .box-container .box .content .share a:hover {
+    color: var(--main-color-red);
+}
+
 /* Media Queries para responsividade */
 @media (max-width: 991px) {
     html {
