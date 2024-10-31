@@ -321,6 +321,77 @@ section {
     padding: 1rem 0;
 }
 
+.pricing {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    gap: 1.5rem;
+}
+
+.pricing .information span {
+    font-size: 2rem;
+    color: var(--main-color-red);
+}
+
+.pricing .information h3 {
+    font-size: 4rem;
+    padding-top: .5rem;
+    color: var(--color-white);
+}
+
+.pricing .information p {
+    line-height: 2;
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    color: var(--color-light-grey-bg);
+}
+
+.pricing .information p i {
+    padding-right: 1rem;
+    color: var(--main-color-red);
+}
+
+.pricing .plan {
+    text-align: center;
+    padding: 2rem;
+}
+
+.pricing .plan.basic {
+    background: linear-gradient(130deg, var(--color-dark-grey-bg) 93%, transparent 90%);
+}
+
+.pricing .plan h3 {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    color: var(--color-white);
+}
+
+.pricing .plan .price {
+    font-size: 5rem;
+    font-weight: bolder;
+    color: var(--main-color-red);
+}
+
+.pricing .plan .price span {
+    color: var(--color-white);
+    font-size: 2rem;
+}
+
+.pricing .plan .list {
+    padding: 1rem 0;
+}
+
+.pricing .plan .list p {
+    line-height: 2;
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    color: var(--color-light-grey-bg);
+}
+
+.pricing .plan .list p i {
+    padding-right: 1rem;
+    color: var(--main-color-red);
+}
+
 /* Media Queries para responsividade */
 @media (max-width: 991px) {
     html {
