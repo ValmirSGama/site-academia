@@ -621,6 +621,90 @@ section {
     padding: 1rem 0;
 }
 
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.2rem;
+    color: var(--color-white);
+    padding: 1rem 1rem;
+}
+
+.footer .box-container .box .fa-arrow-right {
+    color: var(--main-color-red);
+}
+
+.footer .box-container .box .links {
+    font-size: 1.5rem;
+    display: block;
+    color: var(--color-light-grey-bg);
+    padding: 1rem 3rem;
+}
+
+.footer .box-container .box .links:hover {
+    color: var(--main-color-red);
+}
+
+.footer .box-container .box p {
+    font-size: 1.5rem;
+    color: var(--color-light-grey-bg);
+    padding: 1rem 3rem;
+}
+
+.footer .box-container .box p i {
+    padding-right: .5rem;
+    color: var(--main-color-red);
+}
+
+.footer .box-container .box .share {
+    padding: 1rem 3rem;
+}
+
+.footer .box-container .box .share a {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    font-size: 1.7rem;
+    color: var(--color-white);
+    background: var(--color-dark-grey-bg);
+    border-radius: 50%;
+    margin-right: .5rem;
+    text-align: center;
+}
+
+.footer .box-container .box .share a:hover {
+    background: var(--main-color-red);
+}
+
+.footer .box-container .box form {
+    margin-left: 2rem;
+}
+
+.footer .box-container .box form .email {
+    margin-bottom: 1rem;
+    width: 100%;
+    background: var(--color-dark-grey-bg);
+    padding: 1.2rem;
+    font-size: 1.5rem;
+    text-transform: none;
+}
+
+.footer .copyright {
+    padding: 2rem 1rem;
+    text-align: center;
+    font-size: 1.3rem;
+    color: var(--color-white);
+    background: var(--color-dark-grey-bg);
+}
+ 
+.footer .copyright span{
+    font-weight: bold;
+	color: var(--main-color-red);
+}
+
 /* Media Queries para responsividade */
 @media (max-width: 991px) {
     html {
