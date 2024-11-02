@@ -28,3 +28,5 @@ Este projeto é uma homepage para um site de academia, desenvolvida com HTML, CS
    - **Swiper.js**: Configuração dos sliders com diferentes delays e exibições por breakpoint.
 
 [**Demonstração do Projeto**](https://valsite-academia.vercel.app/)
+
+[**Referência do Projeto**](https://www.youtube.com/@claugoncalves9069)
